@@ -7,4 +7,4 @@ hostname = os.environ.get("HOSTNAME", "unknown")
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World", "hostname": hostname}
+    return {"hostname": hostname, "version": "v2.0.0"}
