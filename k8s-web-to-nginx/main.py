@@ -16,4 +16,4 @@ async def nginx():
     url = "http://nginx"
     async with httpx.AsyncClient() as client:
         r = await client.get(url)
-        return r.json()
+        return r.text
